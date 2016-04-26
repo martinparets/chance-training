@@ -5,3 +5,54 @@
 // @import "global";
 // @import "pages";
 @import "shame";
+
+body{
+	font-family: 'Open Sans', sans-serif;
+
+	header{
+		background-image: url("../images/header-bg.jpg");
+		background-size: cover;
+		height: 27.083%;
+		nav{
+			display: inline-block;
+			li{
+				display: inline-block;
+				a{
+				text-decoration: none;
+				color:white;
+				font-family: 'Open Sans', sans-serif;
+				font-size:1.6rem;
+				}
+			}
+			button{
+				background:transparent;
+				font-family: 'Open Sans', sans-serif;
+				font-size:1.6rem;
+				text-transform: uppercase;
+				border: 1px solid white;
+				border-radius: 8px;
+				color: white;
+			}
+		}
+		h1{
+			font-family: 'Open Sans', sans-serif;
+			font-weight: lighter;
+			font-size: 5.6rem;
+			color: white;
+			text-align: center;
+			margin: 0 auto;
+			text-transform: uppercase;
+		}
+	}
+	main{
+		aside{
+			float: right;
+			width:31.944%;
+			text-align:center;
+			color: $dark-grey;
+		}
+		form{
+			width: 68.056%;
+		}
+	}
+}	
