@@ -8,20 +8,34 @@
 
 body{
 	font-family: 'Open Sans', sans-serif;
+	.container{
+		max-width:1440px;
+		margin: 0 auto;
+		padding:0 20px;
+		position: relative;
+		}
 
 	header{
 		background-image: url("../images/header-bg.jpg");
 		background-size: cover;
-		height: 27.083%;
+		height: 27.83%;
+		position: relative;
+		
 		nav{
 			display: inline-block;
+			position: relative;
+			z-index:12;
 			li{
 				display: inline-block;
+				position: relative;
+				z-index:12;
 				a{
 				text-decoration: none;
 				color:white;
 				font-family: 'Open Sans', sans-serif;
 				font-size:1.6rem;
+				position: relative;
+				z-index:12;
 				}
 			}
 			button{
@@ -32,6 +46,8 @@ body{
 				border: 1px solid white;
 				border-radius: 8px;
 				color: white;
+				position: relative;
+				z-index:12;
 			}
 		}
 		h1{
@@ -42,17 +58,174 @@ body{
 			text-align: center;
 			margin: 0 auto;
 			text-transform: uppercase;
+			position: relative;
+			z-index:12;
+			padding: 9.642% 0;
+		}
+		header:after{
+			content: " ";
+			z-index: 10;
+			display: block;
+			position: absolute;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			background: rgba(0, 0, 0, 0.3);
 		}
 	}
 	main{
+		padding-left:9.02%;
 		aside{
 			float: right;
 			width:31.944%;
 			text-align:center;
 			color: $dark-grey;
+			padding-top: 7.143%;
+			h6{
+				font-size:1.6rem;
+				font-weight: bold;
+			}
 		}
-		form{
+		#form{
 			width: 68.056%;
+			
+			h1{
+				font-size:4.5rem;
+				color:black;
+				font-weight:lighter;
+				padding-bottom: 3.15%;
+				padding-top: 7.143%;
+			}
+			ul{
+				padding-bottom: 7.143%;
+				li{
+					list-style: none;
+					float: left;
+					display: block;
+					width:100%;
+					padding-bottom:3.151%;
+				}
+			}
+			label{
+				font-size: 1.4rem;
+				color: $darker-grey;
+				width:100%;
+				display: block;
+			}
+			input{
+				background:$input-bg;
+				width:100%;
+				display:block;
+				height:46px;
+				outline:none;
+				border-radius:2px;
+				border:none;
+			}
+			button{
+				background:white;
+				border: 2px solid $blue;
+				color:$blue;
+				text-transform: uppercase;
+				border-radius: 5px;
+				width:50%;
+				font-size: 1.8rem;
+				padding: 1.5% 0;
+			}
+			button:hover{
+					background:$blue;
+					color:white;
+				}
+			textarea{
+				outline:none;
+				resize:vertical;
+				width:96%;
+				background: $input-bg;
+
+			}
+			.first-name{
+				width:48%;
+			}
+			.last-name{
+				width:48%;
+				padding-left:2%;
+			}
+			.email{
+				width:96%;
+				padding-bottom: 5.714%;
+			}
+			.specify{
+				width:35%;
+				position: relative;
+				select{
+					-webkit-appearance: none;
+					width:100%;
+					height:46px;
+					background: $input-bg;
+					font-size: 1.4rem;
+					border:none;
+					padding-left: 5%;
+				}
+				& :before{
+					position: absolute;
+					content: '';
+					top: 25px;
+					right: 11px;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 0 5px 8px 5px;
+					border-color: transparent transparent #545454 transparent;
+				}
+				& :after{
+					position: absolute;
+					content: '';
+					top: 40px;
+					right: 11px;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 8px 5px 0 5px;
+					border-color: #545454 transparent transparent transparent;
+				}
+			}
+			.phone{
+				width: 61%;
+				padding-left: 2%;
+			}
+			.company{
+				width: 96%;
+			}
+		}
+	}
+	footer{
+		background:$footer-blue;
+		#subfooter{
+			background:$subfooter;
+			text-align:center;
+			margin: 0 auto;
+			width: 100%;
+			color:$footer-text;
+			button{
+				color:white;
+				border:none;
+				border-radius: 0px 3px 3px 0px;
+				background-color:$blue;
+				margin-left:-3px;
+				margin-top:-1px;
+			}
+		}
+		ul{
+			display:inline-block;
+			padding-left:9.02%;
+			p{text-transform:uppercase; color:white;}
+			li{
+				color:$footer-text;
+				list-style: none;
+				a{
+					text-decoration:none;
+				}
+			}
 		}
 	}
 }	
