@@ -1,0 +1,388 @@
+/*
+//      _/      _/  _/_/_/  _/      _/  _/_/_/  _/      _/    _/_/_/
+//     _/_/  _/_/    _/      _/  _/      _/    _/_/    _/  _/
+//    _/  _/  _/    _/        _/        _/    _/  _/  _/    _/_/
+//   _/      _/    _/      _/  _/      _/    _/    _/_/        _/
+//  _/      _/  _/_/_/  _/      _/  _/_/_/  _/      _/  _/_/_/
+*/
+/* ==========================================================================
+   Colors & Shades
+   ========================================================================== */
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+/* ==========================================================================
+   Mixins
+   ========================================================================== */
+/* ==========================================================================
+   Mixins (for animation edition!)
+   ========================================================================== */
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+/* ==========================================================================
+   Grid
+   ========================================================================== */
+/**
+ * Profound Grid
+ * 
+ * Built in Sass (SCSS) this responsive/adaptive grid supports both fixed and fluid layouts, 
+ * relative and fixed gutters, as well as your choice of semantic markup or generic '.grid-x' classes.
+ * 
+ * The biggest difference to other grid systems is the use of negative margins for column
+ * placements, avoiding the subpixel rounding issues that usually break/uglify fluid layouts
+ * in some browsers.
+ * 
+ * Nested columns are supported too, without having to reset the grid on each level. 
+ *
+ * Credits/Inspiration:
+ * -------------------
+ * Semantic Grid: http://www.semantic.gs
+ * Susy: http://susy.oddbird.net
+ * Negative Grid: http://chrisplaneta.com/freebies/negativegrid-fluid-css-grid-by-chris-planeta/
+ *
+ * @author Profound Creative Studio
+ * @url http://www.profoundgrid.com
+ * @url http://www.weareprofound.com 
+ */
+/**
+ * Clearfix
+ */
+/**
+ * Legacy Clearfix
+ */
+/**
+ * Establish the grid-containing element.
+ */
+/**
+ * Align an element to the grid.
+ */
+/**
+ * Apply to any column to make it the last one of the current row.
+ */
+/*
+    _/_/_/    _/_/_/_/    _/_/_/  _/_/_/_/  _/_/_/_/_/
+   _/    _/  _/        _/        _/            _/
+  _/_/_/    _/_/_/      _/_/    _/_/_/        _/
+ _/    _/  _/              _/  _/            _/
+_/    _/  _/_/_/_/  _/_/_/    _/_/_/_/      _/
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/* my own resets, for reasons */
+html {
+  font-size: 62.5%;
+  /*  overflow-y: scroll; */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+input[type="checkbox"], input[type="radio"] {
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  padding-left: 3px;
+  vertical-align: top;
+  width: 98%; }
+
+img {
+  height: auto;
+  max-width: 100%; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*
+//   .d8888b. 888    888       d8888888b     d8888888888888
+//  d88P  Y88b888    888      d888888888b   d8888888
+//  Y88b.     888    888     d88P88888888b.d88888888
+//   "Y888b.  8888888888    d88P 888888Y88888P8888888888
+//      "Y88b.888    888   d88P  888888 Y888P 888888
+//        "888888    888  d88P   888888  Y8P  888888
+//  Y88b  d88P888    888 d8888888888888   "   888888
+//   "Y8888P" 888    888d88P     888888       8888888888888
+*/
+body {
+  font-family: 'Open Sans', sans-serif; }
+  body .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative; }
+  body header {
+    background-image: url("../images/header-bg.jpg");
+    background-size: cover;
+    height: 27.83%;
+    position: relative; }
+    body header nav {
+      display: inline-block;
+      position: relative;
+      z-index: 12; }
+      body header nav li {
+        display: inline-block;
+        position: relative;
+        z-index: 12; }
+        body header nav li a {
+          text-decoration: none;
+          color: white;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 1.6rem;
+          position: relative;
+          z-index: 12; }
+      body header nav button {
+        background: transparent;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        border: 1px solid white;
+        border-radius: 8px;
+        color: white;
+        position: relative;
+        z-index: 12; }
+    body header h1 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: lighter;
+      font-size: 5.6rem;
+      color: white;
+      text-align: center;
+      margin: 0 auto;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 12;
+      padding: 9.642% 0; }
+    body header header:after {
+      content: " ";
+      z-index: 10;
+      display: block;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.3); }
+  body main {
+    padding-left: 9.02%; }
+    body main aside {
+      float: right;
+      width: 31.944%;
+      text-align: center;
+      color: #545454;
+      padding-top: 7.143%; }
+      body main aside h6 {
+        font-size: 1.6rem;
+        font-weight: bold; }
+    body main #form {
+      width: 68.056%; }
+      body main #form h1 {
+        font-size: 4.5rem;
+        color: black;
+        font-weight: lighter;
+        padding-bottom: 3.15%;
+        padding-top: 7.143%; }
+      body main #form ul {
+        padding-bottom: 7.143%; }
+        body main #form ul li {
+          list-style: none;
+          float: left;
+          display: block;
+          width: 100%;
+          padding-bottom: 3.151%; }
+      body main #form label {
+        font-size: 1.4rem;
+        color: #262526;
+        width: 100%;
+        display: block; }
+      body main #form input {
+        background: #F2F2F3;
+        width: 100%;
+        display: block;
+        height: 46px;
+        outline: none;
+        border-radius: 2px;
+        border: none; }
+      body main #form button {
+        background: white;
+        border: 2px solid #0082C9;
+        color: #0082C9;
+        text-transform: uppercase;
+        border-radius: 5px;
+        width: 50%;
+        font-size: 1.8rem;
+        padding: 1.5% 0; }
+      body main #form button:hover {
+        background: #0082C9;
+        color: white; }
+      body main #form textarea {
+        outline: none;
+        resize: vertical;
+        width: 96%;
+        background: #F2F2F3; }
+      body main #form .first-name {
+        width: 48%; }
+      body main #form .last-name {
+        width: 48%;
+        padding-left: 2%; }
+      body main #form .email {
+        width: 96%;
+        padding-bottom: 5.714%; }
+      body main #form .specify {
+        width: 35%;
+        position: relative; }
+        body main #form .specify select {
+          -webkit-appearance: none;
+          width: 100%;
+          height: 46px;
+          background: #F2F2F3;
+          font-size: 1.4rem;
+          border: none;
+          padding-left: 5%; }
+        body main #form .specify :before {
+          position: absolute;
+          content: '';
+          top: 25px;
+          right: 11px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 5px 8px 5px;
+          border-color: transparent transparent #545454 transparent; }
+        body main #form .specify :after {
+          position: absolute;
+          content: '';
+          top: 40px;
+          right: 11px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 8px 5px 0 5px;
+          border-color: #545454 transparent transparent transparent; }
+      body main #form .phone {
+        width: 61%;
+        padding-left: 2%; }
+      body main #form .company {
+        width: 96%; }
+  body footer {
+    background: #1B2D3D; }
+    body footer #subfooter {
+      background: #13202B;
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+      color: #729CC0; }
+      body footer #subfooter button {
+        color: white;
+        border: none;
+        border-radius: 0px 3px 3px 0px;
+        background-color: #0082C9;
+        margin-left: -3px;
+        margin-top: -1px; }
+    body footer ul {
+      display: inline-block;
+      padding-left: 9.02%; }
+      body footer ul p {
+        text-transform: uppercase;
+        color: white; }
+      body footer ul li {
+        color: #729CC0;
+        list-style: none; }
+        body footer ul li a {
+          text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */
