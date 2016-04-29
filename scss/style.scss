@@ -69,6 +69,7 @@ body{
 				z-index:12;
 				margin-left: 1.5%;
 				padding: 0.5% 1%;
+				@include transition;
 			}
 			button:hover{
 				background: white;
@@ -161,6 +162,14 @@ body{
 				border:none;
 				font-size: 1.6rem;
 				padding-left: 2.5%;
+				border:1px solid #e5e5e5;
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) inset;
+				@include transition;
+			}
+			input:focus{
+				background: white;
+				// box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) inset;
+				border:1px solid #e5e5e5;
 			}
 			button{
 				background:white;
@@ -171,6 +180,7 @@ body{
 				width:50%;
 				font-size: 1.8rem;
 				padding: 1.5% 0;
+				@include transition;
 			}
 			button:hover{
 					background:$blue;
@@ -181,8 +191,14 @@ body{
 				resize:vertical;
 				width:96%;
 				background: $input-bg;
-				border: none;
+				border:1px solid #e5e5e5;
 				font-size: 1.6rem;
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) inset;
+				@include transition;
+			}
+			textarea:focus{
+				background: white;
+				border:1px solid #e5e5e5;
 			}
 			.first-name{
 				width:48%;
@@ -209,8 +225,14 @@ body{
 					position: relative;
 					outline: none;
 					border-radius: 2px;
+					box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) inset;
+					border:1px solid #e5e5e5;
 					color: $dark-grey;
-						
+					@include transition
+				}
+				select:focus{
+					background: white;
+
 				}			
 				div:before{
 						position: absolute;
@@ -257,6 +279,18 @@ body{
 			margin: 0 auto;
 			width: 100%;
 			color:$footer-text;
+			display: inline-block;
+			height:9.357%;
+			p{
+				display: inline-block;
+				font-size: 1.4rem;
+				padding: 4.64% 0;
+			}
+			input{
+				height:3.571%;
+				font-size: 1.4rem;
+				width:23%;
+			}
 			button{
 				color:white;
 				border:none;

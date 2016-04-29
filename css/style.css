@@ -253,7 +253,10 @@ body {
         position: relative;
         z-index: 12;
         margin-left: 1.5%;
-        padding: 0.5% 1%; }
+        padding: 0.5% 1%;
+        -moz-transition: all 150ms ease;
+        -webkit-transition: all 150ms ease;
+        transition: all 150ms ease; }
       body header nav button:hover {
         background: white;
         color: #545454; }
@@ -329,7 +332,15 @@ body {
         border-radius: 2px;
         border: none;
         font-size: 1.6rem;
-        padding-left: 2.5%; }
+        padding-left: 2.5%;
+        border: 1px solid #e5e5e5;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) inset;
+        -moz-transition: all 150ms ease;
+        -webkit-transition: all 150ms ease;
+        transition: all 150ms ease; }
+      body main #form input:focus {
+        background: white;
+        border: 1px solid #e5e5e5; }
       body main #form button {
         background: white;
         border: 2px solid #0082C9;
@@ -338,7 +349,10 @@ body {
         border-radius: 5px;
         width: 50%;
         font-size: 1.8rem;
-        padding: 1.5% 0; }
+        padding: 1.5% 0;
+        -moz-transition: all 150ms ease;
+        -webkit-transition: all 150ms ease;
+        transition: all 150ms ease; }
       body main #form button:hover {
         background: #0082C9;
         color: white; }
@@ -347,8 +361,15 @@ body {
         resize: vertical;
         width: 96%;
         background: #F2F2F3;
-        border: none;
-        font-size: 1.6rem; }
+        border: 1px solid #e5e5e5;
+        font-size: 1.6rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) inset;
+        -moz-transition: all 150ms ease;
+        -webkit-transition: all 150ms ease;
+        transition: all 150ms ease; }
+      body main #form textarea:focus {
+        background: white;
+        border: 1px solid #e5e5e5; }
       body main #form .first-name {
         width: 48%; }
       body main #form .last-name {
@@ -371,7 +392,14 @@ body {
           position: relative;
           outline: none;
           border-radius: 2px;
-          color: #545454; }
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) inset;
+          border: 1px solid #e5e5e5;
+          color: #545454;
+          -moz-transition: all 150ms ease;
+          -webkit-transition: all 150ms ease;
+          transition: all 150ms ease; }
+        body main #form .specify select:focus {
+          background: white; }
         body main #form .specify div:before {
           position: absolute;
           z-index: 1;
@@ -408,7 +436,17 @@ body {
       text-align: center;
       margin: 0 auto;
       width: 100%;
-      color: #729CC0; }
+      color: #729CC0;
+      display: inline-block;
+      height: 9.357%; }
+      body footer #subfooter p {
+        display: inline-block;
+        font-size: 1.4rem;
+        padding: 4.64% 0; }
+      body footer #subfooter input {
+        height: 3.571%;
+        font-size: 1.4rem;
+        width: 23%; }
       body footer #subfooter button {
         color: white;
         border: none;
